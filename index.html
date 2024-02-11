@@ -95,7 +95,7 @@
             //console.log (index);
 
             p.innerHTML = ptxt[0].slice(0,++pindex);
-            if(pindex >= ptxt[0].length){ //如果输出完毕,停止周期调用
+            if(index >= txt[0].length){ //如果输出完毕,停止周期调用
                 clearInterval(interval);
             }
         },50)
