@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ywang-Sky</title>
+</head>
+<style>
+    @font-face {
+        font-family: syh;
+        src: url(./syh.otf);
+    }
+    @font-face {
+        font-family: syl;
+        src: url(./syl.otf);
+    }
+    @keyframes start
+    {
+        50% {height: 100%;}
+        100% {height: 200px;opacity: 1; }
+    }
+    html{
+        margin: 0;
+    }
+    body{
+        margin: 0;
+        background: url(./N3006.jpg) no-repeat center center;
+		/* 让背景图基于容器大小伸缩 */
+		background-size: cover;
+        background-attachment: fixed;
+
+    }
+    .div{
+        height: auto;
+        min-height: 1000px;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.589);
+        border-radius: 10px;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        transition: all 0.5s ease;
+    }
+    button{
+        color: rgb(19, 122, 212);
+        background-color:rgba(19, 122, 212, 0.349);
+        border-radius: 10px;
+        min-width: 50px;
+        min-height: 40px;
+        border: 0;
+        transition: all 0.5s ease;
+    }
+    button:hover{
+        background-color:rgba(19, 122, 212, 0.486);
+        cursor:pointer; 
+    }
+    .div:hover{
+        background-color: rgba(255, 255, 255, 0.863);
+    }
+</style>
+<body>
+    <div style="display: flex; width: 100%; height: auto; justify-content: center; margin-top: 20px;">
+        <img src="./N3001.png" alt="ywang" style="height: 150px; width: 150px;">
+        <img src="./SKY.png" alt="sky" style="height: 150px;">
+    </div>
+    <div class="div">
+        <h1 style="font-family: syh; text-align: center; padding-top: 10px;">PC游玩《Sky:Children of the Light》</h1>
+        <div style="padding-left: 10px; padding-right: 10px;">
+            <h3>1.首先,需要下载Steam,因为Sky PC版在其发行</h3>
+            <button onclick="openpage('https://baike.baidu.com/item/Steam/10092959')" >单击此处了解Steam</button>
+            <button onclick="openpage('https://media.st.dl.eccdnx.com/client/installer/SteamSetup.exe')" >单击此处下载Steam</button>
+            <div style="background-color: rgba(255, 0, 0, 0.26); border-radius: 10px; min-height: 40px; display: flex;align-items: Center; margin-top: 10px; margin-bottom: 10px;">
+                <h3 style="color: rgb(235, 0, 0); padding-left: 10px; font-weight: lighter;">注意:有时候我们可能无法顺利下载,如提示"花了太长时间响应"这时我们需要使用加速器来进行下载,这里推荐免费的Steam++</h3>
+            </div>
+            <button onclick="openpage('https://th1.3h3.com/3H3Steamjj.rar?key=0a2d597668bbf518bd0f9c87b8943d07&uskey=5cbd22f27b5515f4981b1ba1395a10f9')" >单击此处下载Steam++ 2.1.0</button>
+            <h3>2.打开刚下载的SteamSetup</h3>
+        </div>
+    </div>
+</body>
+<script>
+    var a
+    function openpage(a){
+        window.open(a)
+    }
+</script>
+</html>
